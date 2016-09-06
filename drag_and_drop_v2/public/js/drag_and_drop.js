@@ -295,10 +295,12 @@ function DragNDropTemplates(url_name) {
     };
 
     var hintButton = function(ctx){
-        if(ctx.feedback_html != ''){
+        if(ctx.assessment_mode){
             return;
         }
-
+        else if(ctx.feedback_html != ''){
+            return;
+        }
         else if(ctx.hint_count == 0){
             return(
             h('button.hint-button.unbutton.disabled', {
