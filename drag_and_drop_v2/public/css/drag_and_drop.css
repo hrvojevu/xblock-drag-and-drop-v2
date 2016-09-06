@@ -259,6 +259,10 @@
     padding: 0;
 }
 
+.xblock--drag-and-drop .target h4{
+    margin: 10px 0;
+}
+
 .xblock--drag-and-drop .target-img-wrapper {
     /* This element is required for Firefox due to https://bugzilla.mozilla.org/show_bug.cgi?id=975632 */
     display: table-row;
@@ -426,6 +430,7 @@
     background: none;
     box-shadow: none;
     border: none;
+    text-align: right;
 }
 
 .xblock--drag-and-drop .link-button:focus, .hint-button:focus {
